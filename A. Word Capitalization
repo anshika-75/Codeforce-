@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+string solve(string& s) {
+    string ans = s;
+    if ( s[0] >= 97) {
+        ans[0] = s[0] - ('a' - 'A');
+        return ans;
+    } else {
+        return s;
+    }
+    return "";
+}
+int main() {
+    string s;
+    cin >> s;
+    string ans = solve(s);
+    cout << ans ;
+    cout << endl;
+return 0;
+}
