@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+#include <set>
+using namespace std;
+int solve (string & s){
+    set<char>st;
+    for(char ch : s){
+        st.insert(ch);
+    }
+        int n = st.size();
+return n % 2 == 0;
+}
+int main() {
+    string s;
+    cin >> s;
+    if(solve(s)) {
+        cout << "CHAT WITH HER!" ;
+        cout << endl;
+    }
+    else {
+         cout << "IGNORE HIM!" ;
+         cout<< endl;
+    }
+    return 0;
+}
