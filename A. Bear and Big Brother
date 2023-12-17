@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std; 
+int solve (int limak , int bob) {
+    int year = 0;
+    while(limak <= bob) {
+        limak *= 3;
+        bob *= 2 ;
+        year++ ;
+    }
+        return year;
+}
+int main (){
+    int limak , bob ;
+    cin >> limak >> bob;
+    int ans = solve(limak , bob);
+    cout <<ans;
+    return 0 ;
+}
+
+//question link is  here
+https://codeforces.com/problemset/problem/791/A
